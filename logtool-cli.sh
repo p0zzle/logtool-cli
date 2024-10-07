@@ -7,11 +7,10 @@ echo "logtool-cli $version"
 
 # variables. Common.
 
-log_directory='/path/to'
 archival_directory='/path/to'
 
 # The script is meant to take the regular /var/log path, if not stated otherwise it will go to this path by default.
-
+cd /
 tar -czvf logs.tar.gz /var/log
 
 # as tar creates the file as-is in the folder that you are working in, we move it to a set destination
